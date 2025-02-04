@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Usuários Cadastrados</h2>
+        <ul>
+            {% for user in usuarios %}
+                <li>
+                    <span>{{ user[1] }}</span>
+                    <span>
+                        <a href="{{ url_for('edit', id=user[0]) }}">✏️ Editar</a>
+                        <a href="{{ url_for('delete', id=user[0]) }}" onclick="return confirm('Tem certeza que deseja excluir este usuário?')">🗑️ Excluir</a>
+                    </span>
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{{ url_for('register') }}">
+            <button class="new-user-btn">➕ Cadastrar Novo Usuário</button>
+        </a>
+    </div>
+</body>
+</html>

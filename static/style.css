@@ -14,7 +14,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 300px;
+    width: 350px;
 }
 
 h2 {
@@ -38,10 +38,12 @@ button {
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
+    transition: 0.3s;
 }
 
 button:hover {
     background: #45a049;
+    transform: scale(1.05);
 }
 
 .erro {
@@ -56,4 +58,72 @@ p a {
 
 p a:hover {
     text-decoration: underline;
+}
+
+/* Estilizando a Dashboard */
+.dashboard-container {
+    background: #2c2c3e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    color: white;
+    text-align: center;
+}
+
+.dashboard-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard-container li {
+    background: #3b3b5b;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-container a {
+    color: #ff5757;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.dashboard-container a:hover {
+    text-decoration: underline;
+}
+
+/* Botão para cadastrar novo usuário */
+.new-user-btn {
+    background: #007BFF;
+    margin-top: 15px;
+}
+
+.new-user-btn:hover {
+    background: #0056b3;
+}
+
+.cadastro-container {
+    margin-top: 15px; /* Espaçamento entre o botão de login e o de cadastro */
+    text-align: center;
+}
+
+.cadastro-btn {
+    background: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.cadastro-btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
 }
