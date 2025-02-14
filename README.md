@@ -2,10 +2,6 @@
 
 ![Badge em Desenvolvimento](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
 
-## 📷 Demonstração
-
-> Insira aqui uma imagem ou GIF do sistema rodando.
-
 ## 🚀 Sobre o Projeto
 
 Este é um sistema simples de cadastro desenvolvido com Flask, permitindo adicionar, editar e excluir usuários. O objetivo é demonstrar habilidades em desenvolvimento web com Python e integração de banco de dados.
